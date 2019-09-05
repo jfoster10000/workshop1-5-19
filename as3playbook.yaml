@@ -27,4 +27,8 @@
     - name: DEBUG OUTPUT AS3 RESPONSE
       debug:
         msg: "{{as3_response}}"   
+    - name: DEBUG OUTPUT AS3 RESPONSE
+      debug:
+        msg: "Content Length = {{as3_response.content_length}}"  
 ...     
+

@@ -15,8 +15,8 @@
       uri:
         url: https://3.10.2.122/mgmt/shared/appsvcs/declare
         method: "{{ uri_method }}"
-        user: "{{ user_creds }}"
-        password: "{{ user_pass }}"
+        user: "{{ bigip_user }}"
+        password: "{{ bigip_pass }}"
         body: "{{ lookup('file','as3_dec.json') }}"
         force_basic_auth: yes
         status_code: 200
